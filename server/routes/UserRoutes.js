@@ -6,5 +6,6 @@ router.post(
   UserValidation.validRegister,
   UserControllers.register
 );
+router.post("/login", UserValidation.validLogin, UserControllers.login);
 
 module.exports = router;
